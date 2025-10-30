@@ -39,7 +39,7 @@ obj1.push(54)
 obj1.display()
 obj1.pop()
 obj1.peek()
-obj1.display(P)
+obj1.display()
 
 
 
