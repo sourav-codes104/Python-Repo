@@ -1,0 +1,16 @@
+
+
+def valid_paranthesis():
+    s = ")[]"
+    tumbler = []
+    for brack in s:
+        if brack == "(":
+            tumbler.append(")")
+        elif brack == "[":
+            tumbler.append("]")
+        elif brack == "{":
+            tumbler.append("}")
+        elif not tumbler or tumbler.pop() != brack:
+            return False
+    return True
+print(valid_paranthesis())
